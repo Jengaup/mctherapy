@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.C. Therapy Center LLC | Terapia Pediátrica Especializada</title>
+  <meta name="description" content="M.C. Therapy Center LLC ofrece evaluaciones y terapias pediátricas especializadas: terapia ocupacional, integración sensorial, procesamiento auditivo y más. Ayudamos a tu hijo a alcanzar su máximo potencial." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="M.C. Therapy Center LLC | Terapia Pediátrica Especializada" />
+  <meta property="og:description" content="Evaluaciones y terapias pediátricas especializadas para que tu hijo alcance su máximo potencial." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jengaup.github.io/mctherapy/" />
+  <meta property="og:image" content="assets/images/og-cover.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">
+        <img src="assets/images/logo.png" alt="M.C. Therapy Center LLC" class="navbar__logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span class="navbar__logo-text" style="display:none;">
+          <span class="logo-mc">MC</span><span class="logo-therapy"> Therapy</span>
+        </span>
+      </a>
+
+      <nav class="navbar__links" id="navLinks">
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#why-us">¿Por qué nosotros?</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <a href="tel:+1XXXXXXXXXX" class="btn btn--primary navbar__cta">Llamar ahora</a>
+
+      <button class="navbar__burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__links">
+      <a href="#about" class="mobile-menu__link">Nosotros</a>
+      <a href="#services" class="mobile-menu__link">Servicios</a>
+      <a href="#why-us" class="mobile-menu__link">¿Por qué nosotros?</a>
+      <a href="#contact" class="mobile-menu__link">Contacto</a>
+    </nav>
+    <div class="mobile-menu__ctas">
+      <a href="tel:+1XXXXXXXXXX" class="btn btn--primary">📞 Llamar ahora</a>
+      <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="btn btn--outline-white">Contáctanos por Facebook</a>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__content" data-aos="fade-up">
+
+        <div class="hero__logo-wrap">
+          <img src="assets/images/logo.png" alt="M.C. Therapy Center LLC" class="hero__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <div class="hero__logo-fallback" style="display:none;">
+            <div class="logo-badge">
+              <span class="logo-badge__initials">MC</span>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="hero__title">
+          Cada niño merece<br />
+          <span class="highlight--turquoise">alcanzar</span> su<br />
+          <span class="highlight--fuchsia">mayor potencial</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          En M.C. Therapy Center LLC ofrecemos evaluaciones y terapias pediátricas especializadas con el cuidado, la calidez y la experiencia que tu familia merece.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="tel:+1XXXXXXXXXX" class="btn btn--primary btn--lg pulse-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Llámanos ahora
+          </a>
+          <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="btn btn--fuchsia btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Escríbenos por Facebook
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="trust-badge">
+            <span class="trust-badge__icon">⭐</span>
+            <span>Atención especializada en niños</span>
+          </div>
+          <div class="trust-badge">
+            <span class="trust-badge__icon">💙</span>
+            <span>Equipo certificado y compasivo</span>
+          </div>
+          <div class="trust-badge">
+            <span class="trust-badge__icon">🏡</span>
+            <span>Ambiente seguro y acogedor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-aos="fade-left" data-aos-delay="200">
+        <div class="hero__illustration">
+          <div class="illus-circle illus-circle--main">
+            <div class="illus-emoji-float illus-emoji--1">🧒</div>
+            <div class="illus-emoji-float illus-emoji--2">💛</div>
+            <div class="illus-emoji-float illus-emoji--3">🌟</div>
+          </div>
+          <div class="illus-card illus-card--1">
+            <span class="illus-card__icon">🧠</span>
+            <span>Integración sensorial</span>
+          </div>
+          <div class="illus-card illus-card--2">
+            <span class="illus-card__icon">✋</span>
+            <span>Terapia Ocupacional</span>
+          </div>
+          <div class="illus-card illus-card--3">
+            <span class="illus-card__icon">👂</span>
+            <span>Procesamiento Auditivo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <span>Descubre más</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__inner">
+
+        <div class="about__visual" data-aos="fade-right">
+          <div class="about__img-wrap">
+            <div class="about__img-placeholder">
+              <div class="img-placeholder__inner">
+                <span class="img-placeholder__icon">🧡</span>
+                <p>Foto del equipo<br /><small>(reemplazar con imagen real)</small></p>
+              </div>
+            </div>
+            <div class="about__accent-card">
+              <span class="accent-card__number">+</span>
+              <span class="accent-card__label">Familias acompañadas con amor y dedicación</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content" data-aos="fade-left" data-aos-delay="100">
+          <div class="section-label">Sobre nosotros</div>
+          <h2 class="section-title">Dedicados al desarrollo y bienestar de cada niño</h2>
+          <p class="section-text">
+            En <strong>M.C. Therapy Center LLC</strong> creemos que cada niño tiene un potencial único. Somos un centro de terapia pediátrica comprometido con brindar evaluaciones y tratamientos de la más alta calidad, en un ambiente seguro, cálido y estimulante.
+          </p>
+          <p class="section-text">
+            Nuestro equipo de terapeutas certificados trabaja de la mano con cada familia, entendiendo las necesidades individuales de cada niño y diseñando planes de intervención personalizados que marcan una diferencia real en su vida diaria.
+          </p>
+          <p class="section-text">
+            Acompañamos a los padres en cada paso del proceso, porque sabemos que cuando una familia está informada y apoyada, los resultados son aún mejores.
+          </p>
+
+          <div class="about__values">
+            <div class="value-item">
+              <span class="value-item__icon" style="background:var(--turquoise)">💎</span>
+              <div>
+                <strong>Excelencia clínica</strong>
+                <p>Terapeutas certificados con formación continua.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-item__icon" style="background:var(--fuchsia)">❤️</span>
+              <div>
+                <strong>Atención personalizada</strong>
+                <p>Cada plan es único, diseñado para tu hijo.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-item__icon" style="background:var(--purple)">🤝</span>
+              <div>
+                <strong>Alianza con la familia</strong>
+                <p>Te acompañamos y orientamos en todo momento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services section section--alt" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Lo que ofrecemos</div>
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-subtitle">Cada servicio está diseñado para potenciar las habilidades de tu hijo y mejorar su calidad de vida.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card__icon-wrap" style="--card-color: var(--turquoise)">
+            <span class="service-card__icon">📋</span>
+          </div>
+          <h3 class="service-card__title">Evaluaciones Pediátricas</h3>
+          <p class="service-card__desc">Evaluaciones integrales para identificar necesidades de desarrollo, habilidades y áreas de oportunidad. El primer paso para un plan de intervención efectivo.</p>
+          <ul class="service-card__list">
+            <li>Evaluación del desarrollo</li>
+            <li>Evaluación sensorial</li>
+            <li>Evaluación de habilidades motoras</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card__icon-wrap" style="--card-color: var(--fuchsia)">
+            <span class="service-card__icon">✋</span>
+          </div>
+          <h3 class="service-card__title">Terapia Ocupacional</h3>
+          <p class="service-card__desc">Ayudamos a los niños a desarrollar las habilidades necesarias para las actividades diarias: vestirse, comer, escribir, jugar e interactuar con su entorno.</p>
+          <ul class="service-card__list">
+            <li>Habilidades de la vida diaria</li>
+            <li>Motricidad fina y gruesa</li>
+            <li>Coordinación ojo-mano</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card__icon-wrap" style="--card-color: var(--purple)">
+            <span class="service-card__icon">🧠</span>
+          </div>
+          <h3 class="service-card__title">Integración Sensorial</h3>
+          <p class="service-card__desc">Intervención especializada para niños que presentan dificultades para procesar e interpretar la información sensorial del entorno, mejorando su regulación y adaptación.</p>
+          <ul class="service-card__list">
+            <li>Regulación emocional</li>
+            <li>Tolerancia sensorial</li>
+            <li>Respuesta adaptativa</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="service-card__icon-wrap" style="--card-color: var(--yellow)">
+            <span class="service-card__icon">👂</span>
+          </div>
+          <h3 class="service-card__title">Procesamiento Auditivo</h3>
+          <p class="service-card__desc">Terapia para niños con dificultades para procesar lo que escuchan, mejorando su atención, comprensión del lenguaje y desempeño académico.</p>
+          <ul class="service-card__list">
+            <li>Discriminación auditiva</li>
+            <li>Memoria auditiva</li>
+            <li>Comprensión del lenguaje</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="service-card__icon-wrap" style="--card-color: var(--turquoise)">
+            <span class="service-card__icon">✏️</span>
+          </div>
+          <h3 class="service-card__title">Habilidades Motoras</h3>
+          <p class="service-card__desc">Trabajo especializado en el desarrollo de habilidades motoras finas y gruesas, fundamentales para el aprendizaje escolar y las actividades cotidianas.</p>
+          <ul class="service-card__list">
+            <li>Escritura a mano</li>
+            <li>Equilibrio y coordinación</li>
+            <li>Fuerza y control muscular</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--cta" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card__icon-wrap" style="--card-color: var(--fuchsia)">
+            <span class="service-card__icon">💬</span>
+          </div>
+          <h3 class="service-card__title">¿Tienes dudas sobre tu hijo?</h3>
+          <p class="service-card__desc">Estamos aquí para orientarte. Contáctanos y con gusto evaluamos cuál servicio se adapta mejor a las necesidades de tu familia.</p>
+          <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:1.5rem;">Consultar gratis</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY US ===================== -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Nuestra diferencia</div>
+        <h2 class="section-title">¿Por qué elegir<br />M.C. Therapy Center?</h2>
+        <p class="section-subtitle">Más que un centro de terapia, somos el aliado que tu familia necesita en este camino.</p>
+      </div>
+
+      <div class="why-us__grid">
+
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="why-card__icon" style="background: linear-gradient(135deg, var(--turquoise), #1aa8b8)">
+            🏆
+          </div>
+          <h3>Especialistas en pediatría</h3>
+          <p>Todos nuestros terapeutas están certificados y especializados en el área pediátrica, con formación continua en las últimas evidencias clínicas.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="80">
+          <div class="why-card__icon" style="background: linear-gradient(135deg, var(--fuchsia), #c4147a)">
+            💞
+          </div>
+          <h3>Trato humano y cálido</h3>
+          <p>Entendemos que traer a tu hijo a terapia puede generar ansiedad. Creamos un espacio de confianza para niños y padres desde el primer día.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="160">
+          <div class="why-card__icon" style="background: linear-gradient(135deg, var(--purple), #5a16a0)">
+            📊
+          </div>
+          <h3>Planes 100% individualizados</h3>
+          <p>No hay dos niños iguales. Cada plan de intervención se diseña a la medida de las necesidades, fortalezas y metas de tu hijo.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="240">
+          <div class="why-card__icon" style="background: linear-gradient(135deg, var(--yellow), #e0b030)">
+            🏡
+          </div>
+          <h3>Ambiente seguro y estimulante</h3>
+          <p>Nuestras instalaciones están diseñadas especialmente para niños, creando un espacio seguro, colorido y terapéuticamente enriquecedor.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="320">
+          <div class="why-card__icon" style="background: linear-gradient(135deg, var(--turquoise), var(--purple))">
+            👨‍👩‍👧‍👦
+          </div>
+          <h3>Acompañamiento familiar</h3>
+          <p>Involucramos a la familia en el proceso terapéutico, brindando orientación y estrategias para continuar el progreso en casa.</p>
+        </div>
+
+        <div class="why-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="why-card__icon" style="background: linear-gradient(135deg, var(--fuchsia), var(--turquoise))">
+            📈
+          </div>
+          <h3>Resultados medibles</h3>
+          <p>Evaluamos el progreso de forma continua y te compartimos los avances de tu hijo con transparencia y celebramos cada logro juntos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta-band">
+    <div class="cta-band__bg-shapes">
+      <div class="cta-shape cta-shape--1"></div>
+      <div class="cta-shape cta-shape--2"></div>
+    </div>
+    <div class="container cta-band__inner" data-aos="fade-up">
+      <div class="cta-band__text">
+        <h2>¿Listo para dar el primer paso?</h2>
+        <p>El bienestar de tu hijo empieza con una conversación. Contáctanos hoy y con gusto te orientamos sin compromiso.</p>
+      </div>
+      <div class="cta-band__buttons">
+        <a href="tel:+1XXXXXXXXXX" class="btn btn--white btn--lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Llamar ahora
+        </a>
+        <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="btn btn--outline-white btn--lg">
+          Escríbenos por Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section section--alt" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">Estamos aquí para ti</div>
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-subtitle">Escríbenos o llámanos, con gusto respondemos todas tus preguntas.</p>
+      </div>
+
+      <div class="contact__grid">
+
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="contact-card__icon" style="background:var(--turquoise)">📞</div>
+          <h3>Teléfono</h3>
+          <p>Llámanos directamente para hablar con nuestro equipo.</p>
+          <a href="tel:+1XXXXXXXXXX" class="contact-card__link">
+            <!-- REEMPLAZAR: +1 (XXX) XXX-XXXX -->
+            +1 (XXX) XXX-XXXX
+          </a>
+        </div>
+
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="contact-card__icon" style="background:var(--fuchsia)">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <h3>Facebook</h3>
+          <p>Escríbenos un mensaje directo en nuestra página de Facebook.</p>
+          <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="contact-card__link">
+            facebook.com/mctherapycenter
+          </a>
+        </div>
+
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="contact-card__icon" style="background:var(--purple)">✉️</div>
+          <h3>Correo electrónico</h3>
+          <p>Envíanos un correo y te respondemos a la brevedad posible.</p>
+          <a href="mailto:info@mctherapycenter.com" class="contact-card__link">
+            <!-- REEMPLAZAR: tu correo real -->
+            info@mctherapycenter.com
+          </a>
+        </div>
+
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="contact-card__icon" style="background:var(--yellow)">📍</div>
+          <h3>Ubicación</h3>
+          <p>Visítanos en nuestras instalaciones.</p>
+          <span class="contact-card__link contact-card__link--placeholder">
+            <!-- REEMPLAZAR: dirección completa -->
+            [Dirección completa aquí]
+          </span>
+        </div>
+
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="contact-card__icon" style="background:var(--turquoise)">🕐</div>
+          <h3>Horario de atención</h3>
+          <p>Disponibles para ti en los siguientes horarios.</p>
+          <div class="contact-card__schedule">
+            <!-- REEMPLAZAR: horarios reales -->
+            <span>Lunes – Viernes: <strong>[X:XX am – X:XX pm]</strong></span>
+            <span>Sábado: <strong>[X:XX am – X:XX pm]</strong></span>
+            <span>Domingo: <strong>Cerrado</strong></span>
+          </div>
+        </div>
+
+        <div class="contact-card contact-card--fb" data-aos="fade-up" data-aos-delay="400">
+          <div class="contact-card__fb-inner">
+            <div class="fb-icon-big">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <p>La manera más rápida de comunicarte con nosotros es a través de Facebook Messenger</p>
+            <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="btn btn--white">
+              Ir a nuestra página de Facebook
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="M.C. Therapy Center LLC" class="footer__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="footer__logo-text" style="display:none;">
+          <span class="logo-mc">MC</span><span class="logo-therapy"> Therapy Center</span>
+        </div>
+        <p class="footer__tagline">Transformando vidas pediátricas con dedicación, ciencia y amor.</p>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Sobre nosotros</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#why-us">¿Por qué nosotros?</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__services">
+        <h4>Servicios</h4>
+        <ul>
+          <li>Evaluaciones Pediátricas</li>
+          <li>Terapia Ocupacional</li>
+          <li>Integración Sensorial</li>
+          <li>Procesamiento Auditivo</li>
+          <li>Habilidades Motoras</li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contacto rápido</h4>
+        <ul>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info@mctherapycenter.com">info@mctherapycenter.com</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener">facebook.com/mctherapycenter</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> M.C. Therapy Center LLC. Todos los derechos reservados.</p>
+        <p class="footer__bottom-sub">Diseñado con 💛 para familias que buscan lo mejor para sus hijos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="tel:+1XXXXXXXXXX" class="floating-btn floating-btn--phone" aria-label="Llamar">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/mctherapycenter" target="_blank" rel="noopener" class="floating-btn floating-btn--fb" aria-label="Facebook">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

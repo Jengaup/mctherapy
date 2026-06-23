@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27C7D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1BB1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon background -->
+  <rect x="0" y="8" width="64" height="64" rx="16" fill="url(#grad1)"/>
+
+  <!-- Heart / child symbol -->
+  <text x="32" y="54" text-anchor="middle" font-size="36" fill="white">🧒</text>
+
+  <!-- MC Text -->
+  <text x="80" y="40" font-family="Poppins, Arial, sans-serif" font-size="32" font-weight="900" fill="#27C7D9">MC</text>
+
+  <!-- Therapy Center Text -->
+  <text x="80" y="62" font-family="Poppins, Arial, sans-serif" font-size="14" font-weight="600" fill="#6A1BB1">Therapy Center LLC</text>
+
+  <!-- Accent dot -->
+  <circle cx="130" cy="24" r="4" fill="#E61B8C"/>
+  <circle cx="144" cy="20" r="3" fill="#F7C948"/>
+</svg>
