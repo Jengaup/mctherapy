@@ -830,6 +830,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 1.5rem;
 }
 
+@media (min-width: 1024px) {
+  .contact__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 .contact-card {
   background: var(--white);
   border-radius: var(--radius-md);
@@ -952,6 +956,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--white);
 }
 .social-link:hover { background: var(--turquoise); }
+.social-link--ig:hover { background: linear-gradient(135deg,#f09433,#dc2743,#bc1888); }
 
 .footer__nav h4,
 .footer__services h4,
