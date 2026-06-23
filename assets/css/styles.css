@@ -450,6 +450,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
   font-size: 5rem;
   box-shadow: 0 20px 60px rgba(106,27,177,.25);
+  overflow: hidden;
+}
+
+.child-svg {
+  width: 210px;
+  height: 230px;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.15));
 }
 
 @keyframes float-1 {
