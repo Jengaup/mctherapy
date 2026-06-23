@@ -306,6 +306,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* --- HERO --- */
 .hero {
+  min-height: 100vh;
   min-height: 100svh;
   padding-top: var(--navbar-h);
   position: relative;
@@ -656,13 +657,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .service-card__icon-wrap {
   width: 56px; height: 56px;
   border-radius: 16px;
-  background: color-mix(in srgb, var(--card-color) 15%, transparent);
+  background: rgba(39, 199, 217, 0.13);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
   margin-bottom: 1.25rem;
+  opacity: 1;
 }
+
+/* Tint each card icon individually */
+.service-card:nth-child(1) .service-card__icon-wrap { background: rgba(39,199,217,.14); }
+.service-card:nth-child(2) .service-card__icon-wrap { background: rgba(230,27,140,.13); }
+.service-card:nth-child(3) .service-card__icon-wrap { background: rgba(106,27,177,.12); }
+.service-card:nth-child(4) .service-card__icon-wrap { background: rgba(247,201,72,.18); }
+.service-card:nth-child(5) .service-card__icon-wrap { background: rgba(39,199,217,.14); }
+.service-card:nth-child(6) .service-card__icon-wrap { background: rgba(230,27,140,.13); }
 
 .service-card__title {
   font-family: var(--font-heading);
